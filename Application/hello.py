@@ -10,6 +10,10 @@ def home():
 def exit():
     return 'Goodbye!'
 
+@app.route('/gratitude')
+def gratitude():
+    return 'Curso DevOps finalizar lo antes posible!'
+
 @app.route("/", methods=["GET", "POST"])
 def response():
     if flask.request.method == "POST":
